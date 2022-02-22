@@ -8,24 +8,22 @@
 </head>
 <body>
     <script>
-        let nota1, nota2, nota3;
-        let dato1, dato2, dato3, media, resultado;
-        dato1 = window.prompt('primer numero:','');
-        nota1 = parseInt(dato1);
-        dato2 = window.prompt('segundo numero: ', '');
-        nota2 = parseInt(dato2);
-        dato3 =  window.prompt('Tercer numero: ', '');
-        nota3 = parseInt(dato3);
-        media = (nota1 + nota2+ nota3)/3;
-
-        if (media < 5){
-            resultado = "Suspendido";
+        let num1 = 0, num2 = 0;
+        let resultado;
+        num1 =  window.prompt('Introducir el primer numero: ','');
+        num2 =  window.prompt('Introducir el segundo numero','');
+        if (num1 > num2){
+            resultado = "El primer numero es el mayor" +num1;
+            if (num2 > num1){
+                resultado = "El Segundo numero es el mayor" + num2;
+            }
+            else{
+                document.write('Son iguales');
+            }
         }
         else{
-            resultado = "Aprobado";
+            console.write('fail');
         }
-
-        document.write('<h3> La nota final' +resultado+'</h3>');
 
     </script>
 </body>
