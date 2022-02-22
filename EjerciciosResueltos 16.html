@@ -9,9 +9,12 @@
 <body>
     <script>
         let num1 = 0, num2 = 0;
+        let dato1, dato2;
         let resultado;
-        num1 =  window.prompt('Introducir el primer numero: ','');
-        num2 =  window.prompt('Introducir el segundo numero','');
+        dato1=  window.prompt('Introducir el primer numero: ','');
+        dato2=  window.prompt('Introducir el segundo numero','');
+        num1 = parseInt(dato1);
+        num2 = parseInt(dato2);
         if (num1 > num2){
             resultado = "El primer numero es el mayor" +num1;
             if (num2 > num1){
@@ -21,10 +24,7 @@
                 document.write('Son iguales');
             }
         }
-        else{
-            console.write('fail');
-        }
-
+        document.write(resultado);
     </script>
 </body>
 </html>
